@@ -66,8 +66,12 @@
         .info-chestnut {
             color: #B97A57;
             padding: 20px;
-            background: #BFBFBF1F;
             font-size: 15px;
+        }
+
+        #footer {
+            background: #f3f3f3;
+            border: 2px solid #E7E7E7;
         }
 
         /* medium */
@@ -155,7 +159,7 @@
     <div class="container-form">
         <div class="row">
             <div class="col-md-12">
-                <div class="form-work-order">
+                <div class="form-work-order" id="work-order">
                     <form action="">
                         <div class="title-form">
                             <p>18 Chestnut WORK ORDER</p>
@@ -175,15 +179,15 @@
                         <div class="form-group">
                             <input type="text" class="form-control" name="issue" placeholder="Issue" required>
                         </div>
-                        <!-- <div class="g-recaptcha pb-2 w-100" data-sitekey="6Lc1jlYlAAAAAEcl0w86RwijMjKBi9XTBHfyNLNr"> -->
+                        <div class="g-recaptcha pb-2 w-100" data-sitekey="6Lc1jlYlAAAAAEcl0w86RwijMjKBi9XTBHfyNLNr">
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="form-control custom-button" name="btn-submit" value="Submit">
+                        </div>
+                    </form>
                 </div>
-                <div class="form-group">
-                    <input type="submit" class="form-control custom-button" name="btn-submit" value="Submit">
-                </div>
-                </form>
             </div>
         </div>
-    </div>
     </div>
     <div id="footer">
         <div class="container">
@@ -191,7 +195,7 @@
                 <div class="col-md-12">
                     <div class="row">
                         <div class="text-center info-chestnut w-100">
-                            <b class="py-1 d-block">18 Chestnut Street | Worcester, MA 01608</b>
+                            <p class="py-1 d-block font-weight-bold">18 Chestnut Street | Worcester, MA 01608</p>
                             <p>24-HOURS for Existing Tenants</p>
                         </div>
                     </div>
