@@ -1,145 +1,109 @@
-/* =================== Layout  ==================== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+#header {
+  background: #b97a57;
+  padding: 8px;
 }
 
-/* Header Info */
-#header #header__info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 0px;
-    font-family: "Trebuchet MS", Sans-serif;
+#header .title {
+  font-weight: 400;
 }
 
-
-#header #header__info .info__contact__phone,
-#footer .info__contact__phone {
-    font-size: 13px;
-    color: grey;
-    margin-bottom: 5px;
-    font-family: "Trebuchet MS", Sans-serif;
+#main-function .logo a {
+  color: #b97a57;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 28px;
 }
 
-#header #header__info .btn__wordOrder {
-    display: inline-block;
-    padding: 6px 12px;
-    text-transform: uppercase;
-    background-color: #118baf;
-    color: white;
-    font-size: 13px;
-    font-family: "Trebuchet MS", Sans-serif;
+#main-function .work-order {
+  padding: 12px 24px;
+  background: #b97a57;
+  font-weight: 500;
 }
 
-/* Header Menu */
-#header #header__menu .mainMenu {
-    padding: 0;
-    list-style-type: none;
-    display: flex;
-    font-family: "Trebuchet MS", Sans-serif;
+#main-function .work-order a:hover {
+  text-decoration: none;
 }
 
-#header #header__menu .mainMenu__link {
-    display: inline-block;
-    color: white !important;
-    padding: 13px 20px;
-    font-family: "Trebuchet MS", Sans-serif;
+.thumb-slide img {
+  width: 100%;
 }
 
-#header #header__menu .mainMenu__link:hover,
-#header #header__menu .mainMenu__link.active {
-    text-decoration: none;
-    color: #118baf !important;
+.container-form {
+  max-width: 760px;
+  padding: 25px;
+  margin: auto;
 }
 
-/* Footer */
+.container-form .title-form {
+  color: #b97a57;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.custom-button {
+  background: #b97a57;
+  color: #fff;
+}
+
+.info-chestnut {
+  color: #b97a57;
+  padding: 20px;
+  font-size: 15px;
+}
+
 #footer {
-    border-top: 0.5px solid #54595f;
+  background: #f3f3f3;
+  border: 2px solid #e7e7e7;
 }
 
-#footer .info__contact__address {
-    font-size: 14px;
-    color: #54595f;
-    font-family: "Trebuchet MS", Sans-serif;
-    margin-bottom: 45px;
-}
+/* medium */
+@media (max-width: 767.98px) {
+  #header {
+    background: #b97a57;
+  }
 
-#footer .button {
-    display: block;
-    margin: 20px 0px;
-    font-family: "Trebuchet MS", Sans-serif;
-    font-weight: 500;
-    fill: #54595f;
-    color: #54595f;
-}
+  #header .title {
+    font-size: 15px;
+  }
 
-#footer .button:hover {
-    text-decoration: none;
-    color: #118baf;
-}
-
-#footer .info_contact__fb,
-#footer .info_contact__twitter,
-#footer .info_contact__google {
-    display: inline-block;
-    background-color: #118baf;
-    color: white;
+  #main-function .logo a {
     font-size: 20px;
-    padding: 6px 12px;
-    margin-bottom: 15px;
+  }
+
+  #main-function .work-order {
+    padding: 5px 10px;
+    font-weight: 500;
+    font-size: 15px;
+  }
 }
 
-.copyright {
-    font-size: 12px;
-    color: #54595f;
-}
+/* phone */
+@media (max-width: 575.98px) {
+  #header {
+    background: #b97a57;
+  }
 
-#header__menu_responsive {
-    display: none;
-}
+  #header .title {
+    font-size: 13px;
+  }
 
-#header__menu_responsive .mainMenu {
-    padding: 0px;
-    list-style-type: none;
-}
+  #main-function .logo a {
+    font-style: italic;
+    font-size: 18px;
+  }
 
-#header__menu_responsive .mainMenu .mainMenu__link {
-    color: #54595f;
-    display: block;
-    padding: 10px 10px;
+  #main-function .work-order {
+    padding: 3px 8px;
+    font-weight: 500;
+    font-size: 15px;
+  }
 
-}
+  .container-form {
+    padding: 15px;
+  }
 
-
-#header__menu_responsive .mainMenu .mainMenu__link.active {
-    background-color: #118baf;
-    color: white;
-}
-
-/* @Media */
-@media only screen and (max-width: 768px) {
-    #header #header__info {
-        flex-direction: column;
-    }
-
-    #header #header__info .info__contact {
-        /* background-color: #F0F5F9; */
-        margin-bottom: 30px;
-        order: 1;
-    }
-
-    #header #header__info .img__logo {
-        display: none;
-        order: 2;
-    }
-
-    #header #header__menu {
-        display: none;
-    }
-
-    #header__menu_responsive {
-        display: block;
-    }
+  .info-chestnut {
+    padding: 10px;
+    font-size: 13px;
+  }
 }
